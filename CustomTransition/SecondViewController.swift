@@ -10,12 +10,27 @@ import UIKit
 
 class SecondViewController: UIViewController {
 
+    @IBOutlet weak var titelLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.edgesForExtendedLayout = .bottom
         // Do any additional setup after loading the view.
+//        let swipeGestureRecognizer: UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action:#selector(showFirstViewController))
+//        swipeGestureRecognizer.direction = UISwipeGestureRecognizerDirection.down
+//        self.view.addGestureRecognizer(swipeGestureRecognizer)
+//
     }
-
+//
+//    @objc private func showFirstViewController() {
+//        self.performSegue(withIdentifier: "idFirstSegueUnwind", sender: self)
+//    }
+    
+    
+    @IBAction func tapMe(_ sender: Any) {
+        self.navigationController?.popViewController()
+        
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		4AFEE696205A1A4400572163 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFEE695205A1A4400572163 /* AppDelegate.swift */; };
-		4AFEE698205A1A4400572163 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFEE697205A1A4400572163 /* ViewController.swift */; };
+		4AFEE698205A1A4400572163 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFEE697205A1A4400572163 /* FirstViewController.swift */; };
 		4AFEE69B205A1A4400572163 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AFEE699205A1A4400572163 /* Main.storyboard */; };
 		4AFEE69D205A1A4400572163 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AFEE69C205A1A4400572163 /* Assets.xcassets */; };
 		4AFEE6A0205A1A4400572163 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AFEE69E205A1A4400572163 /* LaunchScreen.storyboard */; };
 		4AFEE6AB205A1A4500572163 /* CustomTransitionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFEE6AA205A1A4500572163 /* CustomTransitionTests.swift */; };
 		4AFEE6B6205A1A4500572163 /* CustomTransitionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFEE6B5205A1A4500572163 /* CustomTransitionUITests.swift */; };
+		4AFEE6C4205A1CE300572163 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFEE6C3205A1CE300572163 /* SecondViewController.swift */; };
+		4AFEE6D2205A3B2700572163 /* UINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFEE6D1205A3B2700572163 /* UINavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,7 @@
 /* Begin PBXFileReference section */
 		4AFEE692205A1A4400572163 /* CustomTransition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomTransition.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AFEE695205A1A4400572163 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4AFEE697205A1A4400572163 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4AFEE697205A1A4400572163 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		4AFEE69A205A1A4400572163 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4AFEE69C205A1A4400572163 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4AFEE69F205A1A4400572163 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +49,8 @@
 		4AFEE6B1205A1A4500572163 /* CustomTransitionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomTransitionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AFEE6B5205A1A4500572163 /* CustomTransitionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTransitionUITests.swift; sourceTree = "<group>"; };
 		4AFEE6B7205A1A4500572163 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4AFEE6C3205A1CE300572163 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		4AFEE6D1205A3B2700572163 /* UINavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +101,10 @@
 		4AFEE694205A1A4400572163 /* CustomTransition */ = {
 			isa = PBXGroup;
 			children = (
+				4AFEE6D1205A3B2700572163 /* UINavigationController.swift */,
 				4AFEE695205A1A4400572163 /* AppDelegate.swift */,
-				4AFEE697205A1A4400572163 /* ViewController.swift */,
+				4AFEE697205A1A4400572163 /* FirstViewController.swift */,
+				4AFEE6C3205A1CE300572163 /* SecondViewController.swift */,
 				4AFEE699205A1A4400572163 /* Main.storyboard */,
 				4AFEE69C205A1A4400572163 /* Assets.xcassets */,
 				4AFEE69E205A1A4400572163 /* LaunchScreen.storyboard */,
@@ -259,8 +265,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4AFEE698205A1A4400572163 /* ViewController.swift in Sources */,
+				4AFEE6C4205A1CE300572163 /* SecondViewController.swift in Sources */,
+				4AFEE698205A1A4400572163 /* FirstViewController.swift in Sources */,
 				4AFEE696205A1A4400572163 /* AppDelegate.swift in Sources */,
+				4AFEE6D2205A3B2700572163 /* UINavigationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,6 +437,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X2KG7JA423;
 				INFOPLIST_FILE = CustomTransition/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hpk.CustomTransition;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -444,6 +453,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X2KG7JA423;
 				INFOPLIST_FILE = CustomTransition/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hpk.CustomTransition;
 				PRODUCT_NAME = "$(TARGET_NAME)";
