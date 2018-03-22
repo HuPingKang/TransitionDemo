@@ -13,6 +13,9 @@
         <array key="ArialBold.ttf">
             <string>Arial-BoldMT</string>
         </array>
+        <array key="ArialRoundedMTBold.ttf">
+            <string>ArialRoundedMTBold</string>
+        </array>
     </customFonts>
     <scenes>
         <!--First View Controller-->
@@ -30,30 +33,60 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pEa-HB-6DN">
-                                <rect key="frame" x="144" y="587" width="86" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="6q3-Ha-Fim"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="23"/>
-                                <state key="normal" title="Tap Me!">
+                                <rect key="frame" x="114.5" y="519" width="146" height="39"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="23"/>
+                                <state key="normal" title="PresentMove">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="tapMe:" destination="BYZ-38-t0r" eventType="touchUpInside" id="F2p-dc-qJr"/>
+                                    <action selector="presentMove:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GOq-4t-I7t"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J0P-Om-lyh">
+                                <rect key="frame" x="159.5" y="450" width="56" height="39"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="23"/>
+                                <state key="normal" title="Push">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="push:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dll-DD-rYt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ws-Ag-f4h">
+                                <rect key="frame" x="111" y="588" width="153" height="39"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="23"/>
+                                <state key="normal" title="PresentCircle">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="presentCircle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="txp-UG-u5W"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.76747072230000002" blue="0.26336124399999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.98823529409999999" green="0.98823529409999999" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="pEa-HB-6DN" secondAttribute="bottom" constant="30" id="37N-aC-Dlo"/>
-                            <constraint firstItem="pEa-HB-6DN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="D9v-da-qVm"/>
+                            <constraint firstItem="pEa-HB-6DN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Olt-WA-B40"/>
+                            <constraint firstItem="0ws-Ag-f4h" firstAttribute="top" secondItem="pEa-HB-6DN" secondAttribute="bottom" constant="30" id="Owt-W9-aYT"/>
                             <constraint firstItem="5pz-Ap-TbF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TZL-KQ-9pq"/>
+                            <constraint firstItem="J0P-Om-lyh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="V7s-h9-y6b"/>
+                            <constraint firstItem="0ws-Ag-f4h" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="X71-6v-13y"/>
+                            <constraint firstItem="pEa-HB-6DN" firstAttribute="top" secondItem="J0P-Om-lyh" secondAttribute="bottom" constant="30" id="YGK-tf-LAS"/>
                             <constraint firstItem="5pz-Ap-TbF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="82" id="amz-Cd-6L4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="0ws-Ag-f4h" secondAttribute="bottom" constant="40" id="h5l-Qj-5X7"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="titelLabel" destination="5pz-Ap-TbF" id="xdU-ys-W2z"/>
+                        <outlet property="circleBtn" destination="0ws-Ag-f4h" id="ALO-LV-kfR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -74,36 +107,60 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PGm-e3-QdT">
-                                <rect key="frame" x="144" y="587" width="86" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="eA7-cG-sEc"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="23"/>
-                                <state key="normal" title="Tap Me!">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fnG-GW-eHB">
+                                <rect key="frame" x="114.5" y="520" width="146" height="39"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="23"/>
+                                <state key="normal" title="DismissMove">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="tapMe:" destination="9WS-8C-fCO" eventType="touchUpInside" id="9mS-nN-4Cy"/>
+                                    <action selector="dismissMove:" destination="9WS-8C-fCO" eventType="touchUpInside" id="zpv-fc-7dh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zeI-bT-bsq">
+                                <rect key="frame" x="114.5" y="589" width="147" height="38"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="22"/>
+                                <state key="normal" title="DismissCircle">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="dismissCircle:" destination="9WS-8C-fCO" eventType="touchUpInside" id="LrC-ZJ-dQO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p8z-PX-txr">
+                                <rect key="frame" x="166" y="451" width="43" height="39"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="23"/>
+                                <state key="normal" title="Pop">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="pop:" destination="9WS-8C-fCO" eventType="touchUpInside" id="5OD-pI-zgD"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.48396267361111112" green="0.8501180810611112" blue="0.205810546875" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.79215686269999996" green="0.79607843140000001" blue="0.80784313730000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="eb9-0O-3SI" firstAttribute="centerX" secondItem="d4a-IW-p61" secondAttribute="centerX" id="1uk-g1-d7w"/>
-                            <constraint firstItem="PGm-e3-QdT" firstAttribute="centerX" secondItem="d4a-IW-p61" secondAttribute="centerX" id="Iqm-uy-BAC"/>
-                            <constraint firstItem="NNI-2Y-KqI" firstAttribute="bottom" secondItem="PGm-e3-QdT" secondAttribute="bottom" constant="30" id="O8v-yq-AsN"/>
+                            <constraint firstItem="fnG-GW-eHB" firstAttribute="top" secondItem="p8z-PX-txr" secondAttribute="bottom" constant="30" id="ARZ-Cd-kSh"/>
+                            <constraint firstItem="zeI-bT-bsq" firstAttribute="centerX" secondItem="d4a-IW-p61" secondAttribute="centerX" id="GIS-Xh-GNH"/>
+                            <constraint firstItem="fnG-GW-eHB" firstAttribute="centerX" secondItem="d4a-IW-p61" secondAttribute="centerX" id="OcT-0P-RUC"/>
                             <constraint firstItem="eb9-0O-3SI" firstAttribute="top" secondItem="NNI-2Y-KqI" secondAttribute="top" constant="82" id="SEb-gK-qIZ"/>
+                            <constraint firstItem="NNI-2Y-KqI" firstAttribute="bottom" secondItem="zeI-bT-bsq" secondAttribute="bottom" constant="40" id="XW2-cE-xOJ"/>
+                            <constraint firstItem="zeI-bT-bsq" firstAttribute="top" secondItem="fnG-GW-eHB" secondAttribute="bottom" constant="30" id="gxs-ty-q8h"/>
+                            <constraint firstItem="p8z-PX-txr" firstAttribute="centerX" secondItem="d4a-IW-p61" secondAttribute="centerX" id="r5m-qZ-sNv"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="NNI-2Y-KqI"/>
                     </view>
-                    <connections>
-                        <outlet property="titelLabel" destination="eb9-0O-3SI" id="0Px-zo-s3e"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FEi-9R-YlE" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="975" y="134"/>
+            <point key="canvasLocation" x="820" y="134"/>
         </scene>
     </scenes>
 </document>
