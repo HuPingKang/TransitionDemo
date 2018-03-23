@@ -11,6 +11,9 @@ class FirstViewController: UIViewController {
     
     private var isCircle:Bool = false
     
+    @IBOutlet weak var rotationView: UIView!
+    @IBOutlet weak var redPoint: UIView!
+    
     @IBOutlet weak var circleBtn: UIButton!
     let transition = RotationAnimation()
     let transitionBubble = BubbleTransition()
@@ -22,7 +25,28 @@ class FirstViewController: UIViewController {
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
         self.edgesForExtendedLayout = .top
         
+        self.redPoint.layer.cornerRadius = 5
+        self.redPoint.layer.masksToBounds = true
+        
     }
+    
+    private func rotation(){
+        
+        DispatchQueue.main.async {
+            UIView.animate(withDuration: 2) {
+                self.rotationView.layer.anchorPoint = self.redPoint.layer.anchorPoint;
+                var rotatedTransform = self.rotationView.layer.transform
+                rotatedTransform = CATransform3DMakeRotation(CGFloat.pi/6.0, 0, 0, 1.0);//rotate为旋转弧度，绕Z轴转
+                self.rotationView.layer.transform = rotatedTransform;
+            }
+        }
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesBegan(touches, with: event)
+        self.rotation()
+    }
+    
     
     @IBAction func push(_ sender: Any) {
         isCircle = false

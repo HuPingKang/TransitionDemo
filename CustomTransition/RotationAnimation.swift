@@ -23,9 +23,9 @@ class RotationAnimation: NSObject,UIViewControllerAnimatedTransitioning {
         let toVc = transitionContext.viewController(forKey: UITransitionContextViewControllerKey.to)
         
         let finalRect = transitionContext.finalFrame(for: toVc!)
-        
+   
         toVc?.view.frame = finalRect.offsetBy(dx: isPresenting ? UIScreen.main.bounds.width:-(UIScreen.main.bounds.width), dy: 0)
-
+        
         transitionContext.containerView.addSubview((toVc?.view)!)
         
         UIView.animate(withDuration: self.transitionDuration(using: transitionContext), delay: 0.0, usingSpringWithDamping: 0.8, initialSpringVelocity: 0.8, options: [], animations: {
@@ -39,5 +39,4 @@ class RotationAnimation: NSObject,UIViewControllerAnimatedTransitioning {
         
     }
     
-
 }
